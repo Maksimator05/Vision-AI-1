@@ -1,0 +1,43 @@
+# Данные и датасеты
+data/
+bdd100k/
+rgb_anon_trainvaltest/
+gt_detection_trainval/
+gt_detection_trainval_ref/
+
+# Окружение и кэш
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.cache
+
+# IDE
+.idea/
+.vscode/
+
+# Скачанные файлы
+*.whl
+yolov8s.pt
+
+# Исключаем всё из runs КРОМЕ best.pt
+runs/detect/runs/detect/*/weights/last.pt
+runs/detect/runs/detect/*/weights/*.pt
+!runs/detect/runs/detect/*/weights/best.pt
+runs/detect/runs/detect/*/*.png
+runs/detect/runs/detect/*/*.csv
+runs/detect/runs/detect/*/*.jpg
+runs/detect/runs/detect/*/labels/
+runs/detect/runs/detect/*/labels.jpg
+runs/detect/runs/detect/*/results.png
+runs/detect/runs/detect/*/confusion_matrix.png
+runs/detect/runs/detect/*/confusion_matrix_normalized.png
+runs/detect/runs/detect/*/PR_curve.png
+runs/detect/runs/detect/*/P_curve.png
+runs/detect/runs/detect/*/R_curve.png
+runs/detect/runs/detect/*/F1_curve.png
+runs/detect/runs/detect/*/train_batch*.jpg
+runs/detect/runs/detect/*/val_batch*.jpg
+runs/detect/runs/detect/*/test_batch*.jpg
+runs/detect/runs/detect/*/args.yaml
+runs/detect/runs/detect/*/events.out.tfevents.*

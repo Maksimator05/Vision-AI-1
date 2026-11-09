@@ -1,0 +1,7 @@
+path: D:\Yolo\Vision-AI\data\bdd100k_subset  # Абсолютный путь к корневой папке датасета
+train: images/train                         # Относительный путь к обучающим картинкам
+val: images/val                             # Относительный путь к валидационным картинкам
+test: images/test                           # Относительный путь к тестовым картинкам
+
+nc: 3                                       # Количество классов (number of classes)
+names: ['pedestrian', 'rider', 'car']       # Список названий классов по порядку индексов
